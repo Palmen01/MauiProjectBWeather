@@ -21,6 +21,7 @@ namespace MauiProjectBWeather.Views
         OpenWeatherService service;
         GroupedForecast groupedforecast;
         CityPicture city;
+       
 
         public ForecastPage(CityPicture city)
         {
@@ -49,6 +50,8 @@ namespace MauiProjectBWeather.Views
 
             //Here Group your forecast and bind it to your
             //ListView ItemSource
+            var weather = forecast.Items.GroupBy(d => d.DateTime.Date, forecastItem => forecastItem );
+            GroupedForecast.ItemsSource = weather;
         }
     }
 }

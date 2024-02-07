@@ -7,6 +7,6 @@ namespace MauiProjectBWeather.Models
     public class Forecast
     {
         public string City { get; set; }
-        public List<ForecastItem> Items { get; set; } = new List<ForecastItem>();
+        public List<ForecastItem> Items { get; set; } 
     }
 }

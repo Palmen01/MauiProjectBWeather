@@ -14,9 +14,9 @@
         ContentTemplate="{DataTemplate views:AboutPage}"
         Route="about" />
 
-    <ShellContent
+    <!--<ShellContent
         Title="Maui hello"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="mauihello" />
+        Route="mauihello" />-->
 
 </Shell>
